@@ -2,8 +2,6 @@
 // @id              covertabby
 // @name            CoverTabby
 // @description     An animated Alt+Tab switcher with live previews and multiple layouts
-// @description:it-IT Selettore Alt+Tab animato con anteprime in tempo reale e diversi stili
-// @description:it Selettore Alt+Tab animato con anteprime in tempo reale e diversi stili
 // @version         0.22.14
 // @author          LTHC & Lone
 // @github          https://github.com/LoreTheHolyChip
@@ -48,8 +46,6 @@ and the Simple Window Switcher contributors (HID parsing). License provenance re
 | Windows 10/11 Enchanted | ![Windows 10/11 Enchanted](https://raw.githubusercontent.com/LoreTheHolyChip/windhawk-mods/main/screenshots/enchanted-full.png) |
 
 These screenshots were captured using a macro. The same macro can generate fresh screenshots whenever I update CoverTabby.
-
-Questi screenshot sono stati acquisiti con una macro. La stessa macro può generare nuovi screenshot ogni volta che aggiorno CoverTabby.
 
 thanks for using my mod :D
 
@@ -165,24 +161,6 @@ from the same application are never grouped or stacked together in this view.
 
 Each card shows its wallpaper and window layout. Active-window content is live; other desktops reuse available snapshots. Windows without cached content show their application icon and title. At most three small wallpaper textures are loaded at once. Windows' internal desktop contracts vary between builds; unsupported builds show an availability message.
 
-
-## Italiano
-CoverTabby sostituisce Alt+Tab con anteprime animate, icone, ricerca e diversi stili: Normale, Riquadri, Solo icone, Senza anteprime, Solo testo, Ricerca e Windows 10/11 Enchanted.
-
-### Uso
-- Alt+Tab passa alla finestra successiva; Maiusc+Alt+Tab a quella precedente. Rilascia Alt per confermare.
-- Usa le frecce per navigare, Invio per confermare ed Esc per annullare.
-- Scrivi per cercare una finestra, oppure usa Alt+S quando la ricerca è abilitata.
-- Sono disponibili schermo intero e finestra centrata, raggruppamento per applicazione, riflessi, inclinazione 3D e sfondi secondo il tema di Windows.
-- I gesti del touchpad possono essere disattivati se entrano in conflitto con quelli di Windows.
-- Win+Tab è sperimentale e disattivato per impostazione predefinita. L’opzione Tieni premuto Win si applica solo quando Win+Tab è abilitato.
-- La lingua viene rilevata a ogni avvio: italiano con la lingua di visualizzazione italiana di Windows, inglese negli altri casi. I titoli delle finestre e i nomi personalizzati dei desktop mantengono il testo originale.
-
-### Prestazioni e compatibilità
-La cache conserva fino a 12 piccole anteprime e non acquisisce finestre quando CoverTabby è chiuso. La mod usa Explorer tramite Windhawk: nessun programma host separato. Richiede Windows 11. Questa versione è una candidata di prova: il funzionamento con applicazioni elevate, più monitor e i contratti interni dei desktop deve essere verificato sulla versione di Windows in uso.
-
-### Crediti
-LTHC (LoreTheHolyChip), Lone, caliberda e i contributori di Simple Window Switcher. La provenienza delle licenze del codice adattato è ancora in verifica prima della pubblicazione.
 
 */
 // ==/WindhawkModReadme==
