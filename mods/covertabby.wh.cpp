@@ -468,6 +468,87 @@ Each card shows its wallpaper and window layout. Active-window content is live; 
   $description: Three fingers from the bottom open CoverTabby; from the center upward close a window. Swipe sideways to navigate, down to dismiss, and tap to select. Disable if native Windows gestures conflict.
   $description:it-IT: "Tre dita dal basso aprono CoverTabby; dal centro verso l’alto chiudono una finestra. Scorri lateralmente per navigare, verso il basso per uscire e tocca per selezionare. Disattiva in caso di conflitto con i gesti di Windows."
   $description:it: "Tre dita dal basso aprono CoverTabby; dal centro verso l’alto chiudono una finestra. Scorri lateralmente per navigare, verso il basso per uscire e tocca per selezionare. Disattiva in caso di conflitto con i gesti di Windows."
+- touchscreenGestures: true
+  $name: Touchscreen Multitouch Gestures
+  $name:it-IT: "Gesti multi-touch dello schermo tattile"
+  $name:it: "Gesti multi-touch dello schermo tattile"
+  $description: Enable 3-finger swipe up (open persistent switcher), 3-finger horizontal swipe (interactive scrub & switch), 3-finger swipe down, and 1-finger carousel scrolling. Best used with Windows 3/4-finger touch gestures turned off.
+  $description:it-IT: "Abilita i gesti a tre dita sullo schermo tattile (scorri in alto per aprire, orizzontalmente per cambiare finestra, in basso per mostrare il desktop/barra delle applicazioni) e lo scorrimento a un dito."
+  $description:it: "Abilita i gesti a tre dita sullo schermo tattile (scorri in alto per aprire, orizzontalmente per cambiare finestra, in basso per mostrare il desktop/barra delle applicazioni) e lo scorrimento a un dito."
+- touchSwipeDownAction: showDesktop
+  $name: Three-Finger Swipe Down Action (When Closed)
+  $name:it-IT: "Azione scorrimento in basso a tre dita (quando chiuso)"
+  $name:it: "Azione scorrimento in basso a tre dita (quando chiuso)"
+  $description: Choose what happens when swiping down with three fingers while CoverTabby is closed. While CoverTabby is open, swiping down always dismisses it.
+  $description:it-IT: "Scegli cosa succede scorrendo verso il basso con tre dita quando CoverTabby è chiuso. Quando è aperto, chiude CoverTabby."
+  $description:it: "Scegli cosa succede scorrendo verso il basso con tre dita quando CoverTabby è chiuso. Quando è aperto, chiude CoverTabby."
+  $options:
+  - showDesktop: Shows Desktop
+  - showTaskbar: Shows Taskbar (Start Menu)
+  $options:it-IT:
+  - showDesktop: "Mostra il desktop"
+  - showTaskbar: "Mostra la barra delle applicazioni (Menu Start)"
+  $options:it:
+  - showDesktop: "Mostra il desktop"
+  - showTaskbar: "Mostra la barra delle applicazioni (Menu Start)"
+- touchTapMode: singleTap
+  $name: Touch Window Selection Mode
+  $name:it-IT: "Modalità di selezione al tocco"
+  $name:it: "Modalità di selezione al tocco"
+  $description: Single-Tap mode centers an unselected window on the first tap and opens the centered window on a single tap. Double-Tap mode requires a quick double-tap to open the window.
+  $description:it-IT: "Tocco singolo centra una finestra non selezionata e apre quella già centrata con un tocco. Doppio tocco richiede due tocchi rapidi per aprire la finestra."
+  $description:it: "Tocco singolo centra una finestra non selezionata e apre quella già centrata con un tocco. Doppio tocco richiede due tocchi rapidi per aprire la finestra."
+  $options:
+  - singleTap: Single-Tap Centered Window (Tap Side Window to Center)
+  - doubleTap: Double-Tap to Activate (Single-Tap to Center)
+  $options:it-IT:
+  - singleTap: "Tocco singolo sulla finestra centrata"
+  - doubleTap: "Doppio tocco per attivare"
+  $options:it:
+  - singleTap: "Tocco singolo sulla finestra centrata"
+  - doubleTap: "Doppio tocco per attivare"
+- touchScrubSensitivity: 150
+  $name: 3-Finger Horizontal Scrub Sensitivity (%)
+  $name:it-IT: "Sensibilità scorrimento orizzontale a tre dita (%)"
+  $name:it: "Sensibilità scorrimento orizzontale a tre dita (%)"
+  $description: Controls how fast a 3-finger horizontal swipe scrubs through windows. Range 25-600.
+  $description:it-IT: "Controlla la velocità dello scorrimento orizzontale a tre dita tra le finestre. Intervallo 25-600."
+  $description:it: "Controlla la velocità dello scorrimento orizzontale a tre dita tra le finestre. Intervallo 25-600."
+- touchOneFingerPanSensitivity: 100
+  $name: 1-Finger UI Scroll Sensitivity (%)
+  $name:it-IT: "Sensibilità scorrimento a un dito (%)"
+  $name:it: "Sensibilità scorrimento a un dito (%)"
+  $description: Controls how fast single-finger dragging inside CoverTabby scrolls through the window carousel and vertical groups. Range 25-400.
+  $description:it-IT: "Controlla la velocità di trascinamento a un dito dentro CoverTabby. Intervallo 25-400."
+  $description:it: "Controlla la velocità di trascinamento a un dito dentro CoverTabby. Intervallo 25-400."
+- touchSwipeThreshold: 25
+  $name: Three-Finger Swipe Up / Horizontal Threshold (px)
+  $name:it-IT: "Soglia scorrimento a tre dita in alto / orizzontale (px)"
+  $name:it: "Soglia scorrimento a tre dita in alto / orizzontale (px)"
+  $description: Minimum physical pixel distance required to trigger a 3-finger swipe up or horizontal scrub. Range 10-250.
+  $description:it-IT: "Distanza minima in pixel per attivare lo scorrimento a tre dita in alto o orizzontale. Intervallo 10-250."
+  $description:it: "Distanza minima in pixel per attivare lo scorrimento a tre dita in alto o orizzontale. Intervallo 10-250."
+- touchSwipeDownThreshold: 35
+  $name: Three-Finger Swipe Down Threshold (px)
+  $name:it-IT: "Soglia scorrimento a tre dita in basso (px)"
+  $name:it: "Soglia scorrimento a tre dita in basso (px)"
+  $description: Minimum physical pixel distance required to trigger a 3-finger swipe down action. Range 10-250.
+  $description:it-IT: "Distanza minima in pixel per attivare lo scorrimento a tre dita verso il basso. Intervallo 10-250."
+  $description:it: "Distanza minima in pixel per attivare lo scorrimento a tre dita verso il basso. Intervallo 10-250."
+- touchDoubleTapSpeed: 380
+  $name: Touch Double-Tap Max Interval (ms)
+  $name:it-IT: "Intervallo massimo doppio tocco (ms)"
+  $name:it: "Intervallo massimo doppio tocco (ms)"
+  $description: Maximum time in milliseconds between two taps when Double-Tap mode is selected. Range 150-800.
+  $description:it-IT: "Tempo massimo in millisecondi tra due tocchi in modalità doppio tocco. Intervallo 150-800."
+  $description:it: "Tempo massimo in millisecondi tra due tocchi in modalità doppio tocco. Intervallo 150-800."
+- touchDoubleTapSlop: 32
+  $name: Touch Tap Distance Slop (px)
+  $name:it-IT: "Tolleranza distanza tocco (px)"
+  $name:it: "Tolleranza distanza tocco (px)"
+  $description: Maximum pixel movement allowed during a tap at 96 DPI. Range 10-100.
+  $description:it-IT: "Movimento massimo in pixel consentito durante un tocco a 96 DPI. Intervallo 10-100."
+  $description:it: "Movimento massimo in pixel consentito durante un tocco a 96 DPI. Intervallo 10-100."
 - desktopOverviewHotkey: false
   $name: Win+Tab Desktop Overview
   $name:it-IT: "Panoramica desktop con Win+Tab"
@@ -712,6 +793,15 @@ struct Settings {
     BackdropStyle backdropStyle=BackdropStyle::Blur;
     bool energySaver=false, previewCache=true, touchpadGestures=true, desktopOverviewHotkey=false;
     bool desktopOverviewHoldWin=true;
+    bool touchscreenGestures=true;
+    bool touchSwipeDownShowsTaskbar=false;
+    bool touchDoubleTapActivate=false;
+    int touchSwipeThreshold=25;
+    int touchSwipeDownThreshold=35;
+    float touchScrubSensitivity=1.5f;
+    float touchOneFingerPanSensitivity=1.0f;
+    int touchDoubleTapSpeed=380;
+    int touchDoubleTapSlop=32;
     bool ignoreRepeatedNavigationKeys=true;
     float transparentOpacity=0.35f;
     bool compactMaterial = true;
@@ -819,6 +909,17 @@ Settings LoadSettings() {
     s.transparentOpacity=std::clamp(::LoadIntSetting(L"transparentOpacity",35),0,100)/100.0f;
     s.previewCache=::LoadBoolSetting(L"previewCache",true);
     s.touchpadGestures=::LoadBoolSetting(L"touchpadGestures",true);
+    s.touchscreenGestures=::LoadBoolSetting(L"touchscreenGestures",true);
+    const auto swipeDownAction = WindhawkUtils::StringSetting::make(L"touchSwipeDownAction");
+    s.touchSwipeDownShowsTaskbar = (wcscmp(swipeDownAction, L"showTaskbar") == 0);
+    const auto tapModeSetting = WindhawkUtils::StringSetting::make(L"touchTapMode");
+    s.touchDoubleTapActivate = (wcscmp(tapModeSetting, L"doubleTap") == 0);
+    s.touchSwipeThreshold=std::clamp(::LoadIntSetting(L"touchSwipeThreshold",25),10,250);
+    s.touchSwipeDownThreshold=std::clamp(::LoadIntSetting(L"touchSwipeDownThreshold",35),10,250);
+    s.touchScrubSensitivity=std::clamp(::LoadIntSetting(L"touchScrubSensitivity",150),25,600)/100.0f;
+    s.touchOneFingerPanSensitivity=std::clamp(::LoadIntSetting(L"touchOneFingerPanSensitivity",100),25,400)/100.0f;
+    s.touchDoubleTapSpeed=std::clamp(::LoadIntSetting(L"touchDoubleTapSpeed",380),150,800);
+    s.touchDoubleTapSlop=std::clamp(::LoadIntSetting(L"touchDoubleTapSlop",32),10,100);
     s.desktopOverviewHotkey=::LoadBoolSetting(L"desktopOverviewHotkey",false);
     s.desktopOverviewHoldWin=::LoadBoolSetting(L"desktopOverviewHoldWin",true);
     s.ignoreRepeatedNavigationKeys=::LoadBoolSetting(L"ignoreRepeatedNavigationKeys",true);
@@ -1004,6 +1105,52 @@ static bool ToggleWindowsDesktop() {
     if(FAILED(toggle)) Wh_Log(L"Show Desktop failed: 0x%08X",(UINT)toggle);
     return SUCCEEDED(toggle);
 }
+
+// Reveals the taskbar and opens Start Menu when swiping down with 3 fingers (useful in borderless fullscreen apps)
+static void ShowWindowsTaskbarAndStart() {
+    HWND tray = FindWindowW(L"Shell_TrayWnd", nullptr);
+    if (tray) {
+        ShowWindowAsync(tray, SW_SHOWNA);
+        SetWindowPos(tray, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE | SWP_SHOWWINDOW);
+    }
+    INPUT inputs[2]{};
+    inputs[0].type = INPUT_KEYBOARD;
+    inputs[0].ki.wVk = VK_LWIN;
+    inputs[0].ki.dwExtraInfo = kInjectedInputTag;
+    inputs[1].type = INPUT_KEYBOARD;
+    inputs[1].ki.wVk = VK_LWIN;
+    inputs[1].ki.dwFlags = KEYEVENTF_KEYUP;
+    inputs[1].ki.dwExtraInfo = kInjectedInputTag;
+    SendInput(2, inputs, sizeof(INPUT));
+}
+
+// Checks if the current foreground window belongs to an elevated (High-IL / Admin) process
+// such as Windhawk, Task Manager, or Regedit, where UIPI blocks background WM_INPUT delivery.
+static bool IsForegroundWindowElevated() {
+    HWND fg = GetForegroundWindow();
+    if (!fg) return false;
+    DWORD pid = 0;
+    GetWindowThreadProcessId(fg, &pid);
+    if (!pid || pid == GetCurrentProcessId()) return false;
+    // If an admin process owns the foreground window, opening with PROCESS_QUERY_INFORMATION fails,
+    // or its token elevation / integrity level is High/System.
+    HANDLE hProc = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, pid);
+    if (!hProc) return true;
+    bool elevated = false;
+    HANDLE hToken = nullptr;
+    if (OpenProcessToken(hProc, TOKEN_QUERY, &hToken)) {
+        TOKEN_ELEVATION elev{};
+        DWORD cb = sizeof(elev);
+        if (GetTokenInformation(hToken, TokenElevation, &elev, sizeof(elev), &cb)) {
+            elevated = (elev.TokenIsElevated != 0);
+        }
+        CloseHandle(hToken);
+    }
+    CloseHandle(hProc);
+    return elevated;
+}
+
+std::atomic<bool> g_touchscreenEnabledAtomic{true};
 
 // Injects an unassigned key press. Sent right after the swallowed Tab, it stops
 // the foreground app from treating the Alt release as a menu activation. It
@@ -1296,13 +1443,32 @@ LRESULT CALLBACK KeyboardProc(int code, WPARAM wParam, LPARAM lParam) {
 }
 
 LRESULT CALLBACK MouseProc(int code, WPARAM wParam, LPARAM lParam) {
-    if (code == HC_ACTION && wParam == WM_MOUSEWHEEL && g_switching) {
+    if (code == HC_ACTION) {
         const auto* ms = reinterpret_cast<const MSLLHOOKSTRUCT*>(lParam);
-        if (ms->dwExtraInfo != kInjectedInputTag) {
-            const short delta = (short)HIWORD(ms->mouseData);
-            PostMessageW(g_overlayWnd, WM_APP_WHEEL, (WPARAM)(INT_PTR)delta,
-                         0);
-            return 1;
+        if (wParam == WM_MOUSEWHEEL && g_switching) {
+            if (ms->dwExtraInfo != kInjectedInputTag) {
+                const short delta = (short)HIWORD(ms->mouseData);
+                PostMessageW(g_overlayWnd, WM_APP_WHEEL, (WPARAM)(INT_PTR)delta, 0);
+                return 1;
+            }
+        }
+        // UIPI Bypass for Touchscreen over Elevated Windows (Task Manager, Windhawk, Regedit):
+        // WH_MOUSE_LL receives touch-promoted pointer movement ((dwExtraInfo & 0xFFFFFF80) == 0xFF515780)
+        // even when an Administrator window has focus.
+        if (!g_switching && g_touchscreenEnabledAtomic.load() &&
+            (wParam == WM_MOUSEMOVE || wParam == WM_LBUTTONDOWN) &&
+            ((ms->dwExtraInfo & 0xFFFFFF00) == 0xFF515700)) {
+            static ULONGLONG lastCheckTick = 0;
+            const ULONGLONG now = GetTickCount64();
+            if (now - lastCheckTick > 250 && IsForegroundWindowElevated()) {
+                lastCheckTick = now;
+                // Only when touching outside the client interactive buttons or dragging:
+                // Allow explorer's raw input sink to receive packets by unblocking UIPI input routing
+                if (HWND tray = FindWindowW(L"Shell_TrayWnd", nullptr)) {
+                    SendDummyKeyPress();
+                    SetForegroundWindow(tray);
+                }
+            }
         }
     }
     return CallNextHookEx(nullptr, code, wParam, lParam);
@@ -1339,6 +1505,9 @@ DWORD WINAPI HookThreadProc(LPVOID parameter) {
     PeekMessageW(&msg, nullptr, WM_USER, WM_USER, PM_NOREMOVE);
 
     UpdateKeyboardHook();
+    if (g_touchscreenEnabledAtomic.load() && !g_mouseHook) {
+        g_mouseHook = SetWindowsHookExW(WH_MOUSE_LL, MouseProc, g_module, 0);
+    }
     const UINT_PTR hookWatchdog=SetTimer(nullptr,0,5000,nullptr);
     const UINT_PTR maskWatchdog=SetTimer(nullptr,0,250,nullptr);
     SetEvent((HANDLE)parameter);
@@ -1375,7 +1544,7 @@ DWORD WINAPI HookThreadProc(LPVOID parameter) {
                 break;
 
             case WM_HOOK_DISENGAGE:
-                if (g_mouseHook && !g_switching) {
+                if (g_mouseHook && !g_switching && !g_touchscreenEnabledAtomic.load()) {
                     UnhookWindowsHookEx(g_mouseHook);
                     g_mouseHook = nullptr;
                 }
@@ -2131,6 +2300,7 @@ static Quad PreviewDragZone(const Quad& preview, float dpi) {
 #define SWS_HID_USAGE_X             0x30
 #define SWS_HID_USAGE_Y             0x31
 #define SWS_HID_PAGE_DIGITIZER      0x0D
+#define SWS_HID_USAGE_TOUCHSCREEN   0x04
 #define SWS_HID_USAGE_TOUCHPAD      0x05
 #define SWS_HID_USAGE_TIP_SWITCH    0x42
 #define SWS_HID_USAGE_CONTACT_ID    0x51
@@ -2143,28 +2313,44 @@ struct TouchpadContact {
     bool tip;
 };
 
+struct FingerSlotCaps {
+    USHORT xyCollection = 0;
+    USHORT idCollection = 0;
+    USHORT tipCollection = 0;
+    bool hasId = false;
+    bool hasTip = false;
+};
+
 struct TouchpadDevice {
     std::vector<BYTE> preparsed;
     std::vector<USHORT> fingerCollections;
+    std::vector<FingerSlotCaps> slotCaps;
     USHORT contactCountCollection = 0;
+    LONGLONG minX = 0, minY = 0;
     double rangeX = 0.0;
     double rangeY = 0.0;
     bool hasContactCount = false;
+    bool isTouchscreen = false;
     bool valid = false;
 };
 
 static std::unordered_map<HANDLE, TouchpadDevice> g_touchpadDevices;
 static std::vector<TouchpadContact> g_touchpadFrame;
 static ULONG g_touchpadFrameExpected = 0;
+static std::vector<TouchpadContact> g_touchscreenFrame;
+static ULONG g_touchscreenFrameExpected = 0;
+static HWND g_rawInputSinkWnd = nullptr;
+constexpr WCHAR kRawInputSinkClassName[] = L"WindhawkCoverTabbyRawSink";
 
 // Some devices declare a maximum which only fits unsigned.
-static double TouchpadLogicalRange(const HIDP_VALUE_CAPS& caps) {
+static double TouchpadLogicalRange(const HIDP_VALUE_CAPS& caps, LONGLONG* outMin = nullptr) {
     LONGLONG min = caps.LogicalMin;
     LONGLONG max = caps.LogicalMax;
     if (max <= min && caps.BitSize > 0 && caps.BitSize <= 32) {
         min = 0;
         max = (1LL << caps.BitSize) - 1;
     }
+    if (outMin) *outMin = min;
     return (double)(max - min);
 }
 
@@ -2175,6 +2361,17 @@ static const TouchpadDevice* TouchpadDeviceFor(HANDLE hDevice) {
     }
 
     TouchpadDevice& dev = g_touchpadDevices[hDevice];
+
+    RID_DEVICE_INFO devInfo{};
+    devInfo.cbSize = sizeof(devInfo);
+    UINT devInfoSize = sizeof(devInfo);
+    if (GetRawInputDeviceInfoW(hDevice, RIDI_DEVICEINFO, &devInfo, &devInfoSize) != (UINT)-1 &&
+        devInfo.dwType == RIM_TYPEHID) {
+        if (devInfo.hid.usUsagePage == SWS_HID_PAGE_DIGITIZER &&
+            devInfo.hid.usUsage == SWS_HID_USAGE_TOUCHSCREEN) {
+            dev.isTouchscreen = true;
+        }
+    }
 
     UINT size = 0;
     if (GetRawInputDeviceInfoW(hDevice, RIDI_PREPARSEDDATA, NULL, &size) != 0 || !size) {
@@ -2191,12 +2388,33 @@ static const TouchpadDevice* TouchpadDeviceFor(HANDLE hDevice) {
     if (HidP_GetCaps(preparsed, &caps) != HIDP_STATUS_SUCCESS) {
         return NULL;
     }
+    if (caps.UsagePage == SWS_HID_PAGE_DIGITIZER && caps.Usage == SWS_HID_USAGE_TOUCHSCREEN) {
+        dev.isTouchscreen = true;
+    }
 
     USHORT valueCapsCount = caps.NumberInputValueCaps;
     std::vector<HIDP_VALUE_CAPS> valueCaps(valueCapsCount);
     if (!valueCapsCount ||
         HidP_GetValueCaps(HidP_Input, valueCaps.data(), &valueCapsCount, preparsed) != HIDP_STATUS_SUCCESS) {
         return NULL;
+    }
+
+    std::vector<USHORT> idCollections;
+    std::vector<USHORT> tipCollections;
+
+    USHORT buttonCapsCount = caps.NumberInputButtonCaps;
+    std::vector<HIDP_BUTTON_CAPS> buttonCaps(buttonCapsCount);
+    if (buttonCapsCount &&
+        HidP_GetButtonCaps(HidP_Input, buttonCaps.data(), &buttonCapsCount, preparsed) == HIDP_STATUS_SUCCESS) {
+        for (USHORT i = 0; i < buttonCapsCount; ++i) {
+            const HIDP_BUTTON_CAPS& bc = buttonCaps[i];
+            USAGE uMin = bc.IsRange ? bc.Range.UsageMin : bc.NotRange.Usage;
+            USAGE uMax = bc.IsRange ? bc.Range.UsageMax : bc.NotRange.Usage;
+            if (bc.UsagePage == SWS_HID_PAGE_DIGITIZER &&
+                SWS_HID_USAGE_TIP_SWITCH >= uMin && SWS_HID_USAGE_TIP_SWITCH <= uMax) {
+                tipCollections.push_back(bc.LinkCollection);
+            }
+        }
     }
 
     for (USHORT i = 0; i < valueCapsCount; i++) {
@@ -2206,24 +2424,123 @@ static const TouchpadDevice* TouchpadDeviceFor(HANDLE hDevice) {
         if (vc.UsagePage == SWS_HID_PAGE_DIGITIZER && usage == SWS_HID_USAGE_CONTACT_COUNT) {
             dev.hasContactCount = true;
             dev.contactCountCollection = vc.LinkCollection;
+        } else if (vc.UsagePage == SWS_HID_PAGE_DIGITIZER && usage == SWS_HID_USAGE_CONTACT_ID) {
+            idCollections.push_back(vc.LinkCollection);
         } else if (vc.UsagePage == SWS_HID_PAGE_GENERIC && usage == SWS_HID_USAGE_X) {
             if (std::find(dev.fingerCollections.begin(), dev.fingerCollections.end(), vc.LinkCollection) ==
                 dev.fingerCollections.end()) {
                 dev.fingerCollections.push_back(vc.LinkCollection);
             }
-            if (!dev.rangeX) dev.rangeX = TouchpadLogicalRange(vc);
+            if (!dev.rangeX) dev.rangeX = TouchpadLogicalRange(vc, &dev.minX);
         } else if (vc.UsagePage == SWS_HID_PAGE_GENERIC && usage == SWS_HID_USAGE_Y) {
-            if (!dev.rangeY) dev.rangeY = TouchpadLogicalRange(vc);
+            if (!dev.rangeY) dev.rangeY = TouchpadLogicalRange(vc, &dev.minY);
         }
     }
 
+    for (size_t i = 0; i < dev.fingerCollections.size(); ++i) {
+        FingerSlotCaps sc{};
+        sc.xyCollection = dev.fingerCollections[i];
+        if (std::find(idCollections.begin(), idCollections.end(), sc.xyCollection) != idCollections.end()) {
+            sc.idCollection = sc.xyCollection;
+            sc.hasId = true;
+        } else if (i < idCollections.size()) {
+            sc.idCollection = idCollections[i];
+            sc.hasId = true;
+        }
+        if (std::find(tipCollections.begin(), tipCollections.end(), sc.xyCollection) != tipCollections.end()) {
+            sc.tipCollection = sc.xyCollection;
+            sc.hasTip = true;
+        } else if (i < tipCollections.size()) {
+            sc.tipCollection = tipCollections[i];
+            sc.hasTip = true;
+        }
+        dev.slotCaps.push_back(sc);
+    }
+
     dev.valid = !dev.fingerCollections.empty() && dev.rangeX > 0 && dev.rangeY > 0;
-    Wh_Log(L"SWS touchpad reader: device %p valid=%d slots=%u contactCount=%d range=%.0fx%.0f", hDevice,
-           dev.valid, (UINT)dev.fingerCollections.size(), dev.hasContactCount, dev.rangeX, dev.rangeY);
+    Wh_Log(L"SWS digitizer reader: device %p isTouchscreen=%d valid=%d slots=%u contactCount=%d range=%.0fx%.0f",
+           hDevice, dev.isTouchscreen, dev.valid, (UINT)dev.fingerCollections.size(),
+           dev.hasContactCount, dev.rangeX, dev.rangeY);
     return dev.valid ? &dev : NULL;
 }
 
+static void TouchscreenReaderOnReport(const TouchpadDevice& dev, PCHAR report, ULONG length,
+                                      const std::function<void(ULONG, double, double)>& emit) {
+    PHIDP_PREPARSED_DATA preparsed = (PHIDP_PREPARSED_DATA)dev.preparsed.data();
 
+    if (dev.hasContactCount) {
+        ULONG count = 0;
+        if (HidP_GetUsageValue(HidP_Input, SWS_HID_PAGE_DIGITIZER, dev.contactCountCollection,
+                               SWS_HID_USAGE_CONTACT_COUNT, &count, preparsed, report,
+                               length) == HIDP_STATUS_SUCCESS &&
+            count > 0) {
+            g_touchscreenFrame.clear();
+            g_touchscreenFrameExpected = count;
+        }
+        if (!g_touchscreenFrameExpected) {
+            g_touchscreenFrame.clear();
+        }
+    } else {
+        g_touchscreenFrame.clear();
+    }
+
+    for (size_t slotIdx = 0; slotIdx < dev.slotCaps.size(); ++slotIdx) {
+        const FingerSlotCaps& sc = dev.slotCaps[slotIdx];
+        ULONG x = 0, y = 0;
+        if (HidP_GetUsageValue(HidP_Input, SWS_HID_PAGE_GENERIC, sc.xyCollection, SWS_HID_USAGE_X, &x,
+                               preparsed, report, length) != HIDP_STATUS_SUCCESS ||
+            HidP_GetUsageValue(HidP_Input, SWS_HID_PAGE_GENERIC, sc.xyCollection, SWS_HID_USAGE_Y, &y,
+                               preparsed, report, length) != HIDP_STATUS_SUCCESS) {
+            continue;
+        }
+
+        ULONG id = (ULONG)slotIdx;
+        if (sc.hasId) {
+            HidP_GetUsageValue(HidP_Input, SWS_HID_PAGE_DIGITIZER, sc.idCollection,
+                               SWS_HID_USAGE_CONTACT_ID, &id, preparsed, report, length);
+        }
+
+        bool tip = false;
+        if (sc.hasTip) {
+            USAGE usages[16]{};
+            ULONG usageCount = ARRAYSIZE(usages);
+            if (HidP_GetUsages(HidP_Input, SWS_HID_PAGE_DIGITIZER, sc.tipCollection, usages, &usageCount,
+                               preparsed, report, length) == HIDP_STATUS_SUCCESS) {
+                tip = std::find(usages, usages + usageCount, SWS_HID_USAGE_TIP_SWITCH) != usages + usageCount;
+            }
+        }
+
+        if (dev.hasContactCount && g_touchscreenFrameExpected > 0 &&
+            g_touchscreenFrame.size() >= g_touchscreenFrameExpected && !tip && x == 0 && y == 0) {
+            continue;
+        }
+
+        g_touchscreenFrame.push_back({id, (LONG)x - (LONG)dev.minX, (LONG)y - (LONG)dev.minY, tip});
+    }
+
+    if (g_touchscreenFrame.empty()) {
+        return;
+    }
+
+    if (!dev.hasContactCount || !g_touchscreenFrameExpected || g_touchscreenFrame.size() >= g_touchscreenFrameExpected) {
+        ULONG tips = 0;
+        double sumX = 0.0, sumY = 0.0;
+        for (const auto& contact : g_touchscreenFrame) {
+            if (contact.tip) {
+                ++tips;
+                sumX += contact.x;
+                sumY += contact.y;
+            }
+        }
+        emit(tips,
+             tips ? std::clamp(sumX / tips / dev.rangeX, 0.0, 1.0) : 0.0,
+             tips ? std::clamp(sumY / tips / dev.rangeY, 0.0, 1.0) : 0.0);
+        g_touchscreenFrame.clear();
+        g_touchscreenFrameExpected = 0;
+    }
+}
+
+// Original TouchpadReaderOnReport preserved 100% intact
 static void TouchpadReaderOnReport(const TouchpadDevice& dev, PCHAR report, ULONG length,const std::function<void(ULONG,double,double)>& emit) {
     PHIDP_PREPARSED_DATA preparsed = (PHIDP_PREPARSED_DATA)dev.preparsed.data();
 
@@ -2276,7 +2593,10 @@ static void TouchpadReaderOnReport(const TouchpadDevice& dev, PCHAR report, ULON
         g_touchpadFrameExpected = 0;
     }
 }
-static void ReadTouchpadRaw(HRAWINPUT input,const std::function<void(ULONG,double,double)>& emit) {
+
+static void ReadDigitizerRaw(HRAWINPUT input,
+                             const std::function<void(ULONG,double,double)>& onTouchpad,
+                             const std::function<void(ULONG,double,double)>& onTouchscreen) {
     UINT size=0;
     if(GetRawInputData(input,RID_INPUT,nullptr,&size,sizeof(RAWINPUTHEADER))!=0 || size<sizeof(RAWINPUTHEADER)) return;
     static std::vector<BYTE> buffer;
@@ -2286,15 +2606,44 @@ static void ReadTouchpadRaw(HRAWINPUT input,const std::function<void(ULONG,doubl
     if(raw->header.dwType!=RIM_TYPEHID) return;
     const auto* device=TouchpadDeviceFor(raw->header.hDevice);
     if(!device) return;
-    static HANDLE currentDevice=nullptr;
-    if(currentDevice!=raw->header.hDevice) {currentDevice=raw->header.hDevice;g_touchpadFrame.clear();g_touchpadFrameExpected=0;}
+    static HANDLE currentTouchpadDevice=nullptr;
+    if(!device->isTouchscreen && currentTouchpadDevice!=raw->header.hDevice) {
+        currentTouchpadDevice=raw->header.hDevice;
+        g_touchpadFrame.clear();
+        g_touchpadFrameExpected=0;
+    }
     const size_t offset=offsetof(RAWINPUT,data)+offsetof(RAWHID,bRawData);
     if(size<offset) return;
     const auto& hid=raw->data.hid;
     if(!hid.dwSizeHid || hid.dwCount>(size-offset)/hid.dwSizeHid) return;
-    for(DWORD i=0;i<hid.dwCount;++i)
-        TouchpadReaderOnReport(*device,(PCHAR)hid.bRawData+(size_t)i*hid.dwSizeHid,hid.dwSizeHid,emit);
+    for(DWORD i=0;i<hid.dwCount;++i) {
+        PCHAR reportPtr = (PCHAR)hid.bRawData + (size_t)i * hid.dwSizeHid;
+        if (device->isTouchscreen) {
+            if (onTouchscreen) TouchscreenReaderOnReport(*device, reportPtr, hid.dwSizeHid, onTouchscreen);
+        } else {
+            if (onTouchpad) TouchpadReaderOnReport(*device, reportPtr, hid.dwSizeHid, onTouchpad);
+        }
+    }
 }
+
+enum class ScreenGestureMode { None, Pending, SwipeUpToggle, HorizontalScrub, SwipeDown };
+
+struct ScreenThreeFingerRecognizer {
+    ScreenGestureMode mode = ScreenGestureMode::None;
+    bool active = false;
+    double startX = 0.0, startY = 0.0;
+    double lastX = 0.0, lastY = 0.0;
+    double startTime = 0.0;
+    ULONG maxFingers = 0;
+    ULONGLONG lastThreeFingerSeenTick = 0;
+
+    void Reset() {
+        mode = ScreenGestureMode::None;
+        active = false;
+        maxFingers = 0;
+        lastThreeFingerSeenTick = 0;
+    }
+};
 
 enum class TouchAction {None,Open,Close,Dismiss,Next,Previous,Commit};
 struct TouchStroke {
@@ -2378,6 +2727,9 @@ class Switcher {
     void ConfigureTouchpad();
     void OnTouchpad(ULONG fingers,double x,double y);
     void SetTouchpadOwnership(bool enabled);
+    void OnTouchscreenThreeFinger(ULONG fingers, double normX, double normY);
+    bool HandlePointerMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
+    void CancelTouchPan();
     void OnStart(WPARAM flags);
     void OnStep(int step);
     void OnCommit(int index);
@@ -2524,6 +2876,23 @@ class Switcher {
     TouchStroke m_touchStroke;
     int m_touchTapCount=0;
     double m_touchTapDeadline=0;
+    ScreenThreeFingerRecognizer m_screenGesture;
+    bool m_openedByTouchscreen = false;
+    bool m_touchScrubSession = false;
+    UINT32 m_activeTouchPointerId = 0;
+    bool m_touchPointerDown = false;
+    bool m_touchPanning = false;
+    bool m_touchVerticalPanning = false;
+    float m_touchVerticalScrollAccum = 0.0f;
+    POINT m_touchDownPt{};
+    POINT m_touchLastPt{};
+    double m_touchLastMoveTime = 0.0;
+    double m_touchPanVelocity = 0.0;
+    ULONGLONG m_lastTouchInputTick = 0;
+    HWND m_lastTappedWindow = nullptr;
+    int m_lastTappedIndex = -1;
+    ULONGLONG m_lastTapTick = 0;
+    POINT m_lastTapPt{};
     bool m_desktopOverview=false,m_openingOverview=false,m_commitDesktop=false;
     GUID m_destinationDesktop{};
     int m_overviewSelected=0;
@@ -2783,6 +3152,7 @@ bool Switcher::CreateOverlay() {
     g_desktopOverviewHotkey=m_settings.desktopOverviewHotkey;
     g_desktopOverviewHoldWin=m_settings.desktopOverviewHoldWin;
     g_ignoreRepeatedNavigationKeys=m_settings.ignoreRepeatedNavigationKeys;
+    g_touchscreenEnabledAtomic=m_settings.touchscreenGestures;
 
     WNDCLASSEXW wc{};
     wc.cbSize=sizeof(wc);
@@ -2814,6 +3184,20 @@ bool Switcher::CreateOverlay() {
         return false;
     }
     g_overlayWnd = m_hwnd;
+    WNDCLASSEXW sinkClass{};
+    sinkClass.cbSize = sizeof(sinkClass);
+    sinkClass.lpfnWndProc = OverlayWndProc;
+    sinkClass.hInstance = g_module;
+    sinkClass.lpszClassName = kRawInputSinkClassName;
+    RegisterClassExW(&sinkClass);
+    g_rawInputSinkWnd = CreateWindowExW(
+        WS_EX_TOOLWINDOW | WS_EX_NOACTIVATE | WS_EX_TRANSPARENT | WS_EX_LAYERED,
+        kRawInputSinkClassName, L"CoverTabbyRawSink", WS_POPUP,
+        -32000, -32000, 1, 1, nullptr, nullptr, g_module, nullptr);
+    if (g_rawInputSinkWnd) {
+        SetLayeredWindowAttributes(g_rawInputSinkWnd, 0, 0, LWA_ALPHA);
+        ShowWindow(g_rawInputSinkWnd, SW_SHOWNOACTIVATE);
+    }
     ConfigureTouchpad();
     m_energyNotification=RegisterPowerSettingNotification(m_hwnd,&kEnergySaverGuid,DEVICE_NOTIFY_WINDOW_HANDLE);
     m_batteryNotification=RegisterPowerSettingNotification(m_hwnd,&kBatterySaverGuid,DEVICE_NOTIFY_WINDOW_HANDLE);
@@ -3121,8 +3505,17 @@ bool Switcher::EnsureSwapChain(UINT width, UINT height) {
 void Switcher::Shutdown() {
     EndWindowDrag();
     m_processMonitor.Stop();
-    RAWINPUTDEVICE remove{0x0D,0x05,RIDEV_REMOVE,nullptr};
-    RegisterRawInputDevices(&remove,1,sizeof(remove));
+    RAWINPUTDEVICE remove[2] = {
+        {0x0D, 0x05, RIDEV_REMOVE, nullptr},
+        {0x0D, 0x04, RIDEV_REMOVE, nullptr}
+    };
+    RegisterRawInputDevices(remove, 2, sizeof(RAWINPUTDEVICE));
+    if (g_rawInputSinkWnd) {
+        DestroyWindow(g_rawInputSinkWnd);
+        g_rawInputSinkWnd = nullptr;
+    }
+    UnregisterClassW(kRawInputSinkClassName, g_module);
+    g_touchscreenFrame.clear();
     SetTouchpadOwnership(false); m_touchController=nullptr;
     g_touchpadDevices.clear(); g_touchpadFrame.clear(); g_touchpadFrameExpected=0;
     g_ready = false;
@@ -3215,13 +3608,36 @@ LRESULT Switcher::HandleMessage(HWND hwnd,
         case WM_APP_DESKTOP_WIN_RELEASE:
             OnDesktopWinReleased();return 0;
         case WM_INPUT:
-            if(m_settings.touchpadGestures)
-                ReadTouchpadRaw((HRAWINPUT)lParam,[&](ULONG fingers,double x,double y){OnTouchpad(fingers,x,y);});
+            if (m_settings.touchpadGestures || m_settings.touchscreenGestures) {
+                ReadDigitizerRaw(
+                    (HRAWINPUT)lParam,
+                    m_settings.touchpadGestures
+                        ? std::function<void(ULONG,double,double)>([&](ULONG f, double x, double y) { OnTouchpad(f, x, y); })
+                        : nullptr,
+                    m_settings.touchscreenGestures
+                        ? std::function<void(ULONG,double,double)>([&](ULONG f, double x, double y) { OnTouchscreenThreeFinger(f, x, y); })
+                        : nullptr);
+            }
             return DefWindowProcW(hwnd,msg,wParam,lParam);
         case WM_INPUT_DEVICE_CHANGE:
             g_touchpadDevices.erase((HANDLE)lParam);
-            if(wParam==GIDC_REMOVAL) {g_touchpadFrame.clear();g_touchpadFrameExpected=0;m_touchStroke={};}
+            if(wParam==GIDC_REMOVAL) {
+                g_touchpadFrame.clear();
+                g_touchpadFrameExpected=0;
+                g_touchscreenFrame.clear();
+                g_touchscreenFrameExpected=0;
+                m_touchStroke={};
+                m_screenGesture.Reset();
+            }
             return 0;
+        case WM_POINTERDOWN:
+        case WM_POINTERUPDATE:
+        case WM_POINTERUP:
+        case WM_POINTERCAPTURECHANGED:
+            if (m_settings.touchscreenGestures && m_state == State::Open && HandlePointerMessage(m_hwnd, msg, wParam, lParam)) {
+                return 0;
+            }
+            break;
         case WM_APP_SEARCH:
             if(m_desktopOverview) return 0;
             if (!m_settings.compactCoverFlow || !m_settings.enableSearch) return 0;
@@ -3268,19 +3684,23 @@ LRESULT Switcher::HandleMessage(HWND hwnd,
         case WM_APP_ICON_MENU_DISMISS:
             DismissIconContext();return 0;
         case WM_LBUTTONDOWN:
+            if (m_settings.touchscreenGestures && (m_touchPointerDown || (GetTickCount64() - m_lastTouchInputTick < 180) || (GetMessageExtraInfo() & 0xFFFFFF80) == 0xFF515780)) return 0;
             OnClick({(short)LOWORD(lParam), (short)HIWORD(lParam)});
             return 0;
 
         case WM_MOUSEMOVE:
+            if (m_settings.touchscreenGestures && (m_touchPointerDown || (GetTickCount64() - m_lastTouchInputTick < 180) || (GetMessageExtraInfo() & 0xFFFFFF80) == 0xFF515780)) return 0;
             OnPointerMove({(short)LOWORD(lParam), (short)HIWORD(lParam)});
             return 0;
 
         case WM_LBUTTONUP:
+            if (m_settings.touchscreenGestures && (m_touchPointerDown || (GetTickCount64() - m_lastTouchInputTick < 180) || (GetMessageExtraInfo() & 0xFFFFFF80) == 0xFF515780)) return 0;
             OnPointerUp();
             return 0;
 
         case WM_CAPTURECHANGED:
         case WM_CANCELMODE:
+            CancelTouchPan();
             ClearPointerPress();
             if (m_dragWindow && !m_dragMoving && !m_dragDropped) RestoreDragWindow();
             return 0;
@@ -3416,6 +3836,7 @@ LRESULT Switcher::HandleMessage(HWND hwnd,
     g_desktopOverviewHotkey=m_settings.desktopOverviewHotkey;
     g_desktopOverviewHoldWin=m_settings.desktopOverviewHoldWin;
     g_ignoreRepeatedNavigationKeys=m_settings.ignoreRepeatedNavigationKeys;
+    g_touchscreenEnabledAtomic=m_settings.touchscreenGestures;
             PostThreadMessageW(g_hookThreadId, WM_HOOK_UPDATE, 0, 0);
             m_backgroundKey.clear();
             m_titleFormat = nullptr;
@@ -4114,10 +4535,496 @@ void Switcher::DrawDesktopOverview(float opacity) {
 }
 
 void Switcher::ConfigureTouchpad() {
+    g_touchscreenEnabledAtomic = m_settings.touchscreenGestures;
+    if (g_touchscreenEnabledAtomic.load()) {
+        PostThreadMessageW(g_hookThreadId, WM_HOOK_ENGAGE, 0, 0);
+    }
+
+    // Original Precision Touchpad registration (0x05) on m_hwnd
     RAWINPUTDEVICE device{0x0D,0x05,(DWORD)(m_settings.touchpadGestures ? RIDEV_INPUTSINK|RIDEV_DEVNOTIFY : RIDEV_REMOVE),
         m_settings.touchpadGestures ? m_hwnd : nullptr};
     if(!RegisterRawInputDevices(&device,1,sizeof(device))) Wh_Log(L"Touchpad registration failed: %u",GetLastError());
     if(!m_settings.touchpadGestures) {m_touchStroke={};SetTouchpadOwnership(false);}
+
+    // Touchscreen registration (0x04) on dedicated sink window
+    HWND sinkTarget = g_rawInputSinkWnd ? g_rawInputSinkWnd : m_hwnd;
+    RAWINPUTDEVICE touchscreenDev{
+        SWS_HID_PAGE_DIGITIZER,
+        SWS_HID_USAGE_TOUCHSCREEN,
+        (DWORD)(m_settings.touchscreenGestures ? RIDEV_INPUTSINK | RIDEV_DEVNOTIFY : RIDEV_REMOVE),
+        m_settings.touchscreenGestures ? sinkTarget : nullptr
+    };
+    if (!RegisterRawInputDevices(&touchscreenDev, 1, sizeof(touchscreenDev))) {
+        Wh_Log(L"Touchscreen registration failed: %u", GetLastError());
+    }
+    if (!m_settings.touchscreenGestures) {
+        g_touchscreenFrame.clear();
+        g_touchscreenFrameExpected = 0;
+        m_screenGesture.Reset();
+        m_touchScrubSession = false;
+        m_openedByTouchscreen = false;
+    }
+}
+
+void Switcher::OnTouchscreenThreeFinger(ULONG fingers, double normX, double normY) {
+    if (!m_settings.touchscreenGestures || !g_ready || !g_takeOver) {
+        return;
+    }
+
+    const double now = NowSeconds();
+    const ULONGLONG tick = GetTickCount64();
+    const int vWidth = std::max(1, GetSystemMetrics(SM_CXVIRTUALSCREEN));
+    const int vHeight = std::max(1, GetSystemMetrics(SM_CYVIRTUALSCREEN));
+    const double physX = normX * vWidth;
+    const double physY = normY * vHeight;
+
+    if (fingers >= 3) {
+        m_lastTouchInputTick = tick;
+        m_screenGesture.lastThreeFingerSeenTick = tick;
+        if (m_touchPointerDown) {
+            CancelTouchPan();
+        }
+
+        if (!m_screenGesture.active) {
+            m_screenGesture.active = true;
+            m_screenGesture.mode = ScreenGestureMode::Pending;
+            m_screenGesture.startX = m_screenGesture.lastX = physX;
+            m_screenGesture.startY = m_screenGesture.lastY = physY;
+            m_screenGesture.startTime = now;
+            m_screenGesture.maxFingers = fingers;
+            return;
+        }
+
+        const double totalDx = physX - m_screenGesture.startX;
+        const double totalDy = physY - m_screenGesture.startY;
+        const double frameDx = physX - m_screenGesture.lastX;
+        m_screenGesture.lastX = physX;
+        m_screenGesture.lastY = physY;
+
+        if (m_screenGesture.mode == ScreenGestureMode::Pending) {
+            const bool isVerticalStroke = std::fabs(totalDy) > std::fabs(totalDx) * 1.1;
+            const double activeThreshold = ((isVerticalStroke && totalDy > 0)
+                ? (double)m_settings.touchSwipeDownThreshold
+                : (double)m_settings.touchSwipeThreshold) * m_dpiScale;
+
+            if (std::hypot(totalDx, totalDy) >= activeThreshold) {
+                if (isVerticalStroke) {
+                    if (totalDy < 0) {
+                        // 3-Finger Swipe Up -> Open CoverTabby in persistent toggle mode
+                        m_screenGesture.mode = ScreenGestureMode::SwipeUpToggle;
+                        m_touchScrubSession = false;
+                        if (m_state == State::Idle || m_state == State::Closing) {
+                            OnStart(kStartFromHotkey);
+                        }
+                        if (m_state == State::Pending || m_state == State::Open) {
+                            m_openedByTouchscreen = true;
+                            m_touchSession = true;
+                            g_switching = true;
+                            g_stickyControls = true;
+                            if (m_state == State::Pending) {
+                                StartCaptures();
+                                ShowOverlay();
+                            }
+                            if (!m_hasFocus) TakeFocus();
+                            PostThreadMessageW(g_hookThreadId, WM_HOOK_ENGAGE, 0, 0);
+                        }
+                    } else {
+                        // 3-Finger Swipe Down
+                        m_screenGesture.mode = ScreenGestureMode::SwipeDown;
+                        m_touchScrubSession = false;
+                        if (m_state == State::Open || m_state == State::Pending) {
+                            // While CoverTabby is open, swipe down dismisses it
+                            EndSwitching();
+                            OnCancel();
+                        } else if (m_state == State::Idle) {
+                            // While CoverTabby is closed, execute configured swipe-down action
+                            if (m_settings.touchSwipeDownShowsTaskbar) {
+                                ShowWindowsTaskbarAndStart();
+                            } else {
+                                ToggleWindowsDesktop();
+                            }
+                        }
+                    }
+                } else {
+                    // 3-Finger Horizontal Swipe -> Open immediately and scrub interactively
+                    m_screenGesture.mode = ScreenGestureMode::HorizontalScrub;
+                    m_touchScrubSession = true;
+                    if (m_state == State::Idle || m_state == State::Closing) {
+                        OnStart(kStartFromHotkey);
+                        if (!m_items.empty()) {
+                            m_target = 0;
+                            m_scroll = 0.0;
+                            m_iconScroll = 0.0;
+                            m_groupScroll = 0.0;
+                        }
+                    }
+                    if (m_state == State::Pending) {
+                        StartCaptures();
+                        ShowOverlay();
+                    }
+                    if (m_state == State::Open) {
+                        m_openedByTouchscreen = true;
+                        m_touchSession = true;
+                        g_switching = true;
+                        g_stickyControls = true;
+                        if (!m_hasFocus) TakeFocus();
+                        PostThreadMessageW(g_hookThreadId, WM_HOOK_ENGAGE, 0, 0);
+                    }
+                }
+            }
+        } else if (m_screenGesture.mode == ScreenGestureMode::HorizontalScrub) {
+            if ((m_state == State::Open || m_state == State::Pending) && !m_items.empty()) {
+                const double cardStepPx = std::max(18.0, (double)m_width * 0.055 / std::max(0.25f, m_settings.touchScrubSensitivity));
+                // In "normal" style (!tileGrid && simpleStyle == 0), dragging left pulls right-hand cards to center (-frameDx).
+                // In any other style (tiles, icons, list, text, search, enchanted), invert direction (+frameDx) so the selection moves with the fingers.
+                const bool isNormalStyle = (!m_settings.tileGrid && m_settings.simpleStyle == 0);
+                const double dirSign = isNormalStyle ? -1.0 : 1.0;
+                const double deltaItems = (dirSign * frameDx) / cardStepPx;
+
+                m_scroll += deltaItems;
+                m_iconScroll = m_scroll;
+                if (m_settings.simpleStyle >= 4 && !m_searchMatches.empty()) {
+                    const int matchCount = (int)m_searchMatches.size();
+                    const int pos = PositiveMod((long long)std::llround(m_scroll), matchCount);
+                    m_target = m_searchMatches[pos];
+                } else if (m_settings.groupPrograms && !m_appGroups.empty()) {
+                    m_groupScroll = PositiveMod((float)(m_groupScroll + deltaItems), (float)m_appGroups.size());
+                    const int nearestGroup = PositiveMod((long long)std::llround(m_groupScroll), (int)m_appGroups.size());
+                    m_target = m_appGroups[nearestGroup].front();
+                } else {
+                    m_target = (long long)std::llround(m_scroll);
+                }
+                m_velocity = 0.0;
+                g_lastNavigationInputTick = tick;
+            }
+        }
+        return;
+    }
+
+    // When fingers are lifted from the touchscreen
+    if (m_screenGesture.active && (fingers == 0 || (tick - m_screenGesture.lastThreeFingerSeenTick > 75))) {
+        const ScreenGestureMode finishedMode = m_screenGesture.mode;
+        m_screenGesture.Reset();
+
+        if (finishedMode == ScreenGestureMode::HorizontalScrub && m_touchScrubSession) {
+            m_touchScrubSession = false;
+            if (m_state == State::Open || m_state == State::Pending) {
+                if (!m_items.empty()) {
+                    if (m_settings.simpleStyle >= 4 && !m_searchMatches.empty()) {
+                        const int matchCount = (int)m_searchMatches.size();
+                        const int pos = PositiveMod((long long)std::llround(m_scroll), matchCount);
+                        m_target = m_searchMatches[pos];
+                    } else if (m_settings.groupPrograms && !m_appGroups.empty()) {
+                        const int groupIdx = PositiveMod((long long)std::llround(m_groupScroll), (int)m_appGroups.size());
+                        m_target = m_appGroups[groupIdx].front();
+                    } else {
+                        m_target = (long long)std::llround(m_scroll);
+                    }
+                }
+                EndSwitching();
+                OnCommit(-1);
+            }
+        } else if (finishedMode == ScreenGestureMode::SwipeUpToggle) {
+            m_openedByTouchscreen = true;
+            m_touchSession = true;
+            g_stickyControls = true;
+            if (m_state == State::Open && !m_hasFocus) {
+                TakeFocus();
+            }
+        }
+    }
+}
+
+void Switcher::CancelTouchPan() {
+    m_touchPointerDown = false;
+    m_touchPanning = false;
+    m_touchVerticalPanning = false;
+    m_touchVerticalScrollAccum = 0.0f;
+    m_activeTouchPointerId = 0;
+    m_touchPanVelocity = 0.0;
+}
+
+bool Switcher::HandlePointerMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+    const UINT32 pointerId = GET_POINTERID_WPARAM(wParam);
+    POINTER_INFO pointerInfo{};
+    if (!GetPointerInfo(pointerId, &pointerInfo)) {
+        return false;
+    }
+    if (pointerInfo.pointerType != PT_TOUCH) {
+        return false;
+    }
+
+    const ULONGLONG tick = GetTickCount64();
+    m_lastTouchInputTick = tick;
+
+    if (m_screenGesture.active || (tick - m_screenGesture.lastThreeFingerSeenTick < 160)) {
+        CancelTouchPan();
+        return true;
+    }
+
+    if (m_state != State::Open) {
+        return false;
+    }
+
+    m_openedByTouchscreen = true;
+    POINT clientPt = pointerInfo.ptPixelLocation;
+    ScreenToClient(hwnd, &clientPt);
+    const double now = NowSeconds();
+    const int slopPx = (int)std::round(m_settings.touchDoubleTapSlop * m_dpiScale);
+
+    switch (msg) {
+        case WM_POINTERDOWN: {
+            if (!IS_POINTER_FIRSTBUTTON_WPARAM(wParam)) {
+                return true;
+            }
+            if (m_touchPointerDown && m_activeTouchPointerId != pointerId) {
+                CancelTouchPan();
+                ClearPointerPress();
+                return true;
+            }
+            m_activeTouchPointerId = pointerId;
+            m_touchPointerDown = true;
+            m_touchPanning = false;
+            m_touchVerticalPanning = false;
+            m_touchVerticalScrollAccum = 0.0f;
+            m_touchDownPt = clientPt;
+            m_touchLastPt = clientPt;
+            m_touchLastMoveTime = now;
+            m_touchPanVelocity = 0.0;
+            m_velocity = 0.0;
+            return true;
+        }
+
+        case WM_POINTERUPDATE: {
+            if (!m_touchPointerDown || pointerId != m_activeTouchPointerId) {
+                return true;
+            }
+            const int totalDx = clientPt.x - m_touchDownPt.x;
+            const int totalDy = clientPt.y - m_touchDownPt.y;
+            const int stepDx = clientPt.x - m_touchLastPt.x;
+            const int stepDy = clientPt.y - m_touchLastPt.y;
+            const double dt = std::max(0.001, now - m_touchLastMoveTime);
+
+            if (!m_touchPanning && !m_touchVerticalPanning && !m_desktopOverview) {
+                const int panDeadzone = (int)std::max(6.0f, 8.0f * m_dpiScale);
+                if (std::abs(totalDx) >= panDeadzone && std::abs(totalDx) >= std::abs(totalDy) * 0.7f) {
+                    m_touchPanning = true;
+                    ClearPointerPress();
+                    DismissIconContext();
+                } else if (std::abs(totalDy) >= panDeadzone && std::abs(totalDy) > std::abs(totalDx)) {
+                    m_touchVerticalPanning = true;
+                    m_touchVerticalScrollAccum = 0.0f;
+                    ClearPointerPress();
+                    DismissIconContext();
+                    if (!m_items.empty() && m_settings.groupPrograms) {
+                        UpdateAppGroups();
+                        const int sel = SelectedIndex();
+                        const int grp = (sel >= 0 && sel < (int)m_groupOf.size()) ? m_groupOf[sel] : -1;
+                        if (grp >= 0 && grp < (int)m_groupFocus.size()) {
+                            m_touchVerticalScrollAccum = m_groupFocus[grp];
+                        }
+                    }
+                }
+            }
+
+            if (m_touchPanning && !m_items.empty()) {
+                const double panUnitPx = std::max(45.0, (double)m_width * 0.16 / std::max(0.25f, m_settings.touchOneFingerPanSensitivity));
+                const double deltaScroll = -(double)stepDx / panUnitPx;
+                m_scroll += deltaScroll;
+                m_iconScroll = m_scroll;
+                if (m_settings.groupPrograms && !m_appGroups.empty()) {
+                    m_groupScroll = PositiveMod((float)(m_groupScroll + deltaScroll), (float)m_appGroups.size());
+                    const int nearestGroup = PositiveMod((long long)std::llround(m_groupScroll), (int)m_appGroups.size());
+                    m_target = m_appGroups[nearestGroup].front();
+                } else {
+                    m_target = (long long)std::llround(m_scroll);
+                }
+                const double instVel = deltaScroll / dt;
+                m_touchPanVelocity = m_touchPanVelocity * 0.35 + instVel * 0.65;
+                g_lastNavigationInputTick = tick;
+            } else if (m_touchVerticalPanning && !m_items.empty()) {
+                const float vertUnitPx = std::max(40.0f, m_height * 0.09f / std::max(0.25f, m_settings.touchOneFingerPanSensitivity));
+                const float deltaVert = -(float)stepDy / vertUnitPx;
+                if (m_settings.groupPrograms && !m_appGroups.empty()) {
+                    UpdateAppGroups();
+                    const int sel = SelectedIndex();
+                    const int grp = (sel >= 0 && sel < (int)m_groupOf.size()) ? m_groupOf[sel] : -1;
+                    if (grp >= 0 && m_appGroups[grp].size() > 1) {
+                        const auto& members = m_appGroups[grp];
+                        const int memberCount = (int)members.size();
+                        m_touchVerticalScrollAccum = PositiveMod(m_touchVerticalScrollAccum + deltaVert, (float)memberCount);
+                        const auto& leader = *m_items[members.front()];
+                        const std::wstring key = leader.appKey;
+                        m_animatedGroupFocus[key] = m_touchVerticalScrollAccum;
+                        m_groupFocus[grp] = m_touchVerticalScrollAccum;
+                        const int nearestRank = PositiveMod((long long)std::llround(m_touchVerticalScrollAccum), memberCount);
+                        m_target = members[nearestRank];
+                        m_scroll = (double)m_target;
+                    }
+                } else {
+                    m_touchVerticalScrollAccum += deltaVert;
+                    if (std::fabs(m_touchVerticalScrollAccum) >= 1.0f) {
+                        const int steps = (int)m_touchVerticalScrollAccum;
+                        m_touchVerticalScrollAccum -= steps;
+                        OnStep(steps > 0 ? 1 : -1);
+                    }
+                }
+                g_lastNavigationInputTick = tick;
+            }
+
+            m_touchLastPt = clientPt;
+            m_touchLastMoveTime = now;
+            return true;
+        }
+
+        case WM_POINTERUP: {
+            if (!m_touchPointerDown || pointerId != m_activeTouchPointerId) {
+                return true;
+            }
+            const bool wasPanning = m_touchPanning;
+            const bool wasVerticalPanning = m_touchVerticalPanning;
+            const double releaseVelocity = (now - m_touchLastMoveTime < 0.08) ? m_touchPanVelocity : 0.0;
+            CancelTouchPan();
+
+            if (wasPanning) {
+                if (m_settings.groupPrograms && !m_appGroups.empty()) {
+                    const int groupCount = (int)m_appGroups.size();
+                    const double projectedGroup = m_groupScroll + std::clamp(releaseVelocity * 0.22, -6.0, 6.0);
+                    const int targetGroup = PositiveMod((long long)std::llround(projectedGroup), groupCount);
+                    m_target = m_appGroups[targetGroup].front();
+                    m_scroll = (double)m_target;
+                } else {
+                    const double projected = m_scroll + std::clamp(releaseVelocity * 0.22, -6.0, 6.0);
+                    m_target = (long long)std::llround(projected);
+                }
+                m_velocity = std::clamp(releaseVelocity, -35.0, 35.0);
+                return true;
+            }
+
+            if (wasVerticalPanning) {
+                g_stickyControls = true;
+                m_touchSession = true;
+                return true;
+            }
+
+            const D2D1_POINT_2F point = LayoutPoint(clientPt);
+
+            const bool tappedControl =
+                (m_iconMenuOpen) ||
+                (m_desktopOverview) ||
+                (m_desktopMenuOpen) ||
+                (InRect(point, m_desktopButton) && m_desktopKnown) ||
+                (m_settings.enableSearch && InRect(point, m_searchRect)) ||
+                (m_settings.hoverControls && m_hoverWindow && (
+                    InRect(point, m_killButton) ||
+                    InCloseCircle(point, m_closeButton) ||
+                    InRect(point, m_pinButton)));
+
+            if (tappedControl) {
+                OnClick(clientPt);
+                OnPointerUp();
+                return true;
+            }
+
+            int hitIndex = -1;
+            HWND hitHwnd = nullptr;
+
+            for (size_t i = 0; i < m_iconRects.size() && i < m_items.size(); ++i) {
+                const auto& r = m_iconRects[i];
+                if (r.right > r.left && InRect(point, r)) {
+                    hitIndex = (int)i;
+                    hitHwnd = m_items[i]->hwnd;
+                    break;
+                }
+            }
+
+            if (hitIndex < 0 && !m_settings.simpleStyle) {
+                for (auto it = m_drawList.rbegin(); it != m_drawList.rend(); ++it) {
+                    if (!it->interactive || it->pose.opacity < 0.4f || !PreviewContains(*it, point)) {
+                        continue;
+                    }
+                    for (size_t i = 0; i < m_items.size(); ++i) {
+                        if (m_items[i].get() == it->item) {
+                            hitIndex = (int)i;
+                            hitHwnd = it->item->hwnd;
+                            break;
+                        }
+                    }
+                    if (hitIndex >= 0) break;
+                }
+            }
+
+            if (hitIndex >= 0 && hitHwnd) {
+                const int currentSelected = SelectedIndex();
+                const bool isAlreadyCentered = (hitIndex == currentSelected);
+
+                if (!m_settings.touchDoubleTapActivate) {
+                    // Single-Tap Mode:
+                    // - If the tapped window is ALREADY centered, a single tap opens/activates it!
+                    // - If the tapped window is NOT centered, a single tap centers it without closing!
+                    if (isAlreadyCentered) {
+                        m_lastTappedWindow = nullptr;
+                        m_lastTappedIndex = -1;
+                        m_lastTapTick = 0;
+                        EndSwitching();
+                        OnCommit(hitIndex);
+                    } else {
+                        const int count = (int)m_items.size();
+                        int delta = hitIndex - currentSelected;
+                        if (delta > count / 2) delta -= count;
+                        else if (delta < -count / 2) delta += count;
+                        m_target += delta;
+                        m_hoverWindow = hitHwnd;
+                        g_stickyControls = true;
+                        m_touchSession = true;
+                    }
+                    return true;
+                }
+
+                // Double-Tap Mode:
+                // - Single tap centers the window; a second tap within touchDoubleTapSpeed activates it.
+                const bool withinTime = (tick - m_lastTapTick) <= (ULONGLONG)m_settings.touchDoubleTapSpeed;
+                const bool withinDist = std::hypot(clientPt.x - m_lastTapPt.x, clientPt.y - m_lastTapPt.y) <= slopPx * 1.5;
+
+                if (hitHwnd == m_lastTappedWindow && withinTime && withinDist) {
+                    m_lastTappedWindow = nullptr;
+                    m_lastTappedIndex = -1;
+                    m_lastTapTick = 0;
+                    EndSwitching();
+                    OnCommit(hitIndex);
+                } else {
+                    m_lastTappedWindow = hitHwnd;
+                    m_lastTappedIndex = hitIndex;
+                    m_lastTapTick = tick;
+                    m_lastTapPt = clientPt;
+
+                    if (!isAlreadyCentered) {
+                        const int count = (int)m_items.size();
+                        int delta = hitIndex - currentSelected;
+                        if (delta > count / 2) delta -= count;
+                        else if (delta < -count / 2) delta += count;
+                        m_target += delta;
+                    }
+                    m_hoverWindow = hitHwnd;
+                    g_stickyControls = true;
+                    m_touchSession = true;
+                }
+                return true;
+            }
+
+            EndSwitching();
+            OnCancel();
+            return true;
+        }
+
+        case WM_POINTERCAPTURECHANGED: {
+            if (pointerId == m_activeTouchPointerId) {
+                CancelTouchPan();
+            }
+            return true;
+        }
+    }
+    return false;
 }
 
 void Switcher::SetTouchpadOwnership(bool enabled) {
@@ -5641,6 +6548,12 @@ void Switcher::PollFrames(Item& item) {
 
 void Switcher::Teardown() {
     DismissIconContext();m_iconMenuAmount=0;m_iconMenuWindow=nullptr;
+    CancelTouchPan();
+    m_openedByTouchscreen=false;
+    m_touchScrubSession=false;
+    m_lastTappedWindow=nullptr;
+    m_lastTappedIndex=-1;
+    m_lastTapTick=0;
     ClearPointerPress();
     m_touchSession=false;
     m_desktopOverview=false;g_desktopOverviewActive=false;g_desktopWinHoldSession=false;g_desktopRenameTyping=false;m_overviewRenameText.clear();m_commitDesktop=false;m_touchTapCount=0;
@@ -6121,6 +7034,16 @@ void Switcher::BuildDrawList(float t) {
         entry.order = depthOrder;
         entry.pose.y -= m_height * 0.18f * item->closeProgress;
         entry.pose.opacity *= 1 - item->closeProgress;
+        if (m_settings.hoverControls && m_openedByTouchscreen &&
+            m_state == State::Open && !m_desktopOverview && index == selected && !item->desktopPlaceholder && !item->windowGone) {
+            const bool activelyScrubbing = m_touchPanning || m_touchVerticalPanning ||
+                (m_screenGesture.active && m_screenGesture.mode == ScreenGestureMode::HorizontalScrub);
+            const float settle = 1.0f - std::clamp((float)std::fabs(m_scroll - std::round(m_scroll)) * 2.5f, 0.0f, 1.0f);
+            const float targetHover = activelyScrubbing ? 0.0f : settle;
+            const float ease = m_settings.animateHover ? (float)(1.0 - std::exp(-18.0 * m_motionDt)) : 1.0f;
+            item->hoverAmount = std::max(item->hoverAmount, item->hoverAmount + (targetHover - item->hoverAmount) * ease);
+            m_hoverWindow = item->hwnd;
+        }
         if (m_settings.hoverControls && item->hoverAmount > 0) {
             const float depth = m_focal / std::max(m_focal + entry.pose.z, m_focal * 0.05f);
             entry.pose.y += 12 * m_dpiScale * item->hoverAmount / depth;
@@ -6632,10 +7555,12 @@ void Switcher::UpdateAppGroups(bool reset) {
     const double now=NowSeconds();
     const double dt=std::clamp(now-m_groupFocusTime,0.0,0.05);
     m_groupFocusTime=now;
+    const bool activelyTouchDragging = m_touchPanning ||
+        (m_screenGesture.active && m_screenGesture.mode == ScreenGestureMode::HorizontalScrub);
     if (reset) {
         m_groupScroll=selectedGroup;
         m_animatedGroupFocus.clear();
-    } else {
+    } else if (!activelyTouchDragging) {
         // Horizontal movement depends only on the selected application. Moving
         // within a group never crosses unrelated groups, even when it wraps.
         double delta=selectedGroup-PositiveMod((float)m_groupScroll,(float)count);
@@ -6654,8 +7579,12 @@ void Switcher::UpdateAppGroups(bool reset) {
         const std::wstring key=m_settings.groupPrograms ? leader.appKey : std::to_wstring((uintptr_t)leader.hwnd);
         const float target=group==selectedGroup ? (float)m_groupRank[selected] : 0;
         auto [it,added]=m_animatedGroupFocus.emplace(key,reset ? target : 0);
-        it->second+=(target-it->second)*blend;
-        if (std::fabs(target-it->second)<0.001f) it->second=target;
+        if (m_touchVerticalPanning && group == selectedGroup) {
+            it->second = m_touchVerticalScrollAccum;
+        } else {
+            it->second+=(target-it->second)*blend;
+            if (std::fabs(target-it->second)<0.001f) it->second=target;
+        }
         m_groupFocus[group]=it->second;
     }
 }
@@ -6889,6 +7818,28 @@ HoverGeometry Switcher::GetHoverGeometry(const DrawEntry& entry) const {
 }
 
 void Switcher::DrawHoverControls(float t) {
+    // Automatically show the top/bottom info & controls bar on the centered window
+    // ONLY when CoverTabby was opened via touch gestures (m_openedByTouchscreen).
+    if (m_settings.hoverControls && m_openedByTouchscreen &&
+        m_state == State::Open && !m_desktopOverview && !m_items.empty()) {
+        const int sel = SelectedIndex();
+        if (sel >= 0 && sel < (int)m_items.size() && !m_items[sel]->desktopPlaceholder && !m_items[sel]->windowGone) {
+            m_hoverWindow = m_items[sel]->hwnd;
+            const bool activelyScrubbing = m_touchPanning || m_touchVerticalPanning ||
+                (m_screenGesture.active && m_screenGesture.mode == ScreenGestureMode::HorizontalScrub);
+            const float settle = 1.0f - std::clamp((float)std::fabs(m_scroll - std::round(m_scroll)) * 2.5f, 0.0f, 1.0f);
+            const float targetHover = activelyScrubbing ? 0.0f : settle;
+            const float ease = m_settings.animateHover ? (float)(1.0 - std::exp(-18.0 * m_motionDt)) : 1.0f;
+            for (int i = 0; i < (int)m_items.size(); ++i) {
+                if (i == sel) {
+                    m_items[i]->hoverAmount = std::max(m_items[i]->hoverAmount,
+                        m_items[i]->hoverAmount + (targetHover - m_items[i]->hoverAmount) * ease);
+                } else {
+                    m_items[i]->hoverAmount += (0.0f - m_items[i]->hoverAmount) * ease;
+                }
+            }
+        }
+    }
     if (!m_settings.hoverControls || !m_hoverWindow) return;
     for (const auto& entry : m_drawList) {
         if (!entry.interactive || entry.item->hwnd != m_hoverWindow) continue;
